@@ -6,10 +6,10 @@ A collection of elasticsearch command line tools, with query based filtering cap
 - **dump** an index to bulk files : data, mapping and analysers.
 - **index** .bulk files : index data, mapping and analysers.
 
-# Version Warning
+## Version Warning
 Sling works with ElasticSearch 6.x and higher.
 
-# Use of a query filter to dump, delete or count
+## Use of a query filter to dump, delete or count
 Sling can use a query to filter what you want to. The query used is an ElasticSearch DSL query :
 ```json
 {
@@ -51,8 +51,8 @@ sling command -q '{
     sling command -q "{\"query\": {\"bool\": {\"must\": [{\"match\": {\"name\": \"John\"}}]}}}'
     ```
 
-# Sling's featured commands
-## Ingest
+## Sling's featured commands
+### Ingest
 
 A pretty straightforward method to define your data mapping, apply basic transformations and bulk ingest your datasets from files into existing or new indexes. 
  
